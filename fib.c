@@ -28,7 +28,7 @@ uint64_t fib_i(uint64_t num)
     {
     	for (int i = 2; i < num; ++i)
     	{
-    		if (second > ULLONG_MAX - first)
+    	    if (second > ULLONG_MAX - first)
             {
                 printf("Error: overflow\nMax value: %lu\n", second);
                 exit(1);
